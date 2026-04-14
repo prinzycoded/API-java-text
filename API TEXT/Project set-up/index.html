@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Your content goes here -->
+   <div class="max-w-5xl mx-auto px-4 py-8">
+  <h1 class="text-2xl font-bold text-gray-800 mb-6">User Directory</h1>
+
+  <!-- Search input -->
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="Search by name or username..."
+    class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6
+           focus:outline-none focus:ring-2 focus:ring-blue-400"
+  />
+
+  <!-- Loading / error messages go here -->
+  <div id="status"></div>
+
+  <!-- User cards will be injected here by JavaScript -->
+  <div id="userGrid"
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  </div>
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
